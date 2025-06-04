@@ -31,3 +31,18 @@ git commit 커밋ID
 
 # 특정 branch 로의 전환
 git checkout -b 
+
+# git 커밋취소
+git reset head~1d
+
+git revert 커밋id
+
+
+# 가장 최신의 commit 취소
+git reset head~1
+git reset head^
+
+# 이미 push된 commit 사항 되돌리기 (완전한취소x) commitID 생성
+git revert 커밋ID
+
+
