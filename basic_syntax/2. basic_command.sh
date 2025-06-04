@@ -14,3 +14,20 @@ git commit
 
 # commit 이력 확인
 git log
+git log --oneline
+
+# head 하단의 log만 보이는 것이 아니라 모든 commit 이력을 조회
+# head : 현재 체크아웃된 브랜치의 커밋을 의미
+git log --all
+
+# 원격저장소 업로드 
+git push origin 브랜치명
+
+#충돌 발생시 충돌무시하고, 로컬기준으로 원격에 덮어쓰기
+git push origin 브랜치명 --force
+
+# 특정 commit ID 로의 전환
+git commit 커밋ID 
+
+# 특정 branch 로의 전환
+git checkout -b 
