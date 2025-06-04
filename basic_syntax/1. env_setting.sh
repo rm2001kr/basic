@@ -50,3 +50,10 @@ git config --list
 # 경로 : root 경로에서부터 시작. ex) testfolder/improtant_config.yml
 # 만약 이미 git에서 추적되고 있는 파일은 캐시 삭제 필요 
 git rm -r --cashed . 
+
+
+1)commit남아있게 가져가기
+.git폴더 유지 -> git remote set-url origin 레포주소 -> git push origin main
+
+2)commit이 없는채로 가져가기
+.git폴더 삭제 -> git init -> git checkout -b main -> git remote add origin 레포주소 -> add, commit, push
